@@ -1,0 +1,23 @@
+{
+  "name": "all-fantasy-api",
+  "version": "1.0.0",
+  "description": "An API project for the popular podcast, All Fantasy Everything.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericrees9/allfantasyAPI.git"
+  },
+  "author": "erees",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericrees9/allfantasyAPI/issues"
+  },
+  "homepage": "https://github.com/ericrees9/allfantasyAPI#readme"
+}
