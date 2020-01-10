@@ -10,7 +10,6 @@ let cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
-
 // Connecting to PGAdmin
 sequelize.sync(); // {force: true} for resetting tables
 
