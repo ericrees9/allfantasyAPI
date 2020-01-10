@@ -4,11 +4,11 @@ require("dotenv").config();
 // Express Linking
 let express = require("express");
 let app = express();
+var sequelize = require('./db');
 let cors = require("cors");
 
 app.use(express.json());
 app.use(cors());
-
 
 
 // Connecting to PGAdmin
