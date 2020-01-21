@@ -2,16 +2,19 @@
 require("dotenv").config();
 
 // Express Linking
-let express = require("express");
-let app = express();
-var sequelize = require('./db');
-let cors = require("cors");
+const express = require("express");
+const app = express();
+const sequelize = require('./db');
+const cors = require("cors");
+const episode = require('./controllers/episodeController');
 
 app.use(express.json());
 app.use(cors());
 
 // Connecting to PGAdmin
 sequelize.sync(); // {force: true} for resetting tables
+
+app.use('/episode', episode);
 
 // Listening Message
 app.listen(process.env.PORT, function(){

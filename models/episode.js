@@ -1,60 +1,61 @@
-module.exports = function(sequelize, DataTypes){
-    return sequelize.define('episode', {
+module.exports = (sequelize, DataTypes) => {
+    const Episode = sequelize.define('episode', {
       title: {
         type: DataTypes.STRING,
-        allowNull: false
+        // allowNull: false
       },
       date: {
         type: DataTypes.DATE,
-        allowNull: false
+        // allowNull: false
       },
       recordingLocation: {
         type: DataTypes.STRING,
-        allowNull: false
+        // allowNull: false
       },
       length: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        // allowNull: false
       },
       descriptio: {
         type: DataTypes.STRING,
-        allowNull: false
+        // allowNull: false
       },
       drafters: {
-        type: DataTypes.ARRAY,
-        allowNull: false
+        type: DataTypes.STRING,
+        // allowNull: false
       },
       rpsWinner: {
         type: DataTypes.STRING,
-        allowNull: false
+        // allowNull: false
       },
       draftOrder: {
-        type: DataTypes.ARRAY,
-        allowNull: false
+        type: DataTypes.STRING,
+        // allowNull: false
       },
       draftPicks: {
-        type: DataTypes.ARRAY,
-        allowNull: false
+        type: DataTypes.STRING,
+        // allowNull: false
       },
       bitsCreated: {
-        type: DataTypes.ARRAY,
-        allowNull: false
+        type: DataTypes.STRING,
+        // allowNull: false
       },
       bitsReferenced: {
-        type: DataTypes.ARRAY,
-        allowNull: false
+        type: DataTypes.STRING,
+        // allowNull: false
       },
       iansApp: {
         type: DataTypes.STRING,
-        allowNull: false
+        // allowNull: false
       },
       draftDescription: {
         type: DataTypes.STRING,
-        allowNull: false
+        // allowNull: false
       },
       shoutouts: {
-        type: DataTypes.ARRAY,
-        allowNull: false
+        type: DataTypes.STRING,
+        // allowNull: false
       }
     })
+    return Episode;
   }
