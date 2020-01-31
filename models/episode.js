@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       // allowNull: false
     },
     drafters: {
-      type: DataTypes.STRING
+      type: DataTypes.ARRAY(DataTypes.STRING)
       // allowNull: false
     },
     rpsWinner: {
@@ -33,19 +33,19 @@ module.exports = (sequelize, DataTypes) => {
       // allowNull: false
     },
     draftOrder: {
-      type: DataTypes.STRING
+      type: DataTypes.ARRAY(DataTypes.STRING)
       // allowNull: false
     },
     draftPicks: {
-      type: DataTypes.STRING
+      type: DataTypes.ARRAY(DataTypes.STRING)
       // allowNull: false
     },
     bitsCreated: {
-      type: DataTypes.STRING
+      type: DataTypes.ARRAY(DataTypes.STRING)
       // allowNull: false
     },
     bitsReferenced: {
-      type: DataTypes.STRING
+      type: DataTypes.ARRAY(DataTypes.STRING)
       // allowNull: false
     },
     iansApp: {
@@ -57,7 +57,7 @@ module.exports = (sequelize, DataTypes) => {
       // allowNull: false
     },
     shoutouts: {
-      type: DataTypes.STRING
+      type: DataTypes.ARRAY(DataTypes.STRING)
       // allowNull: false
     }
   });
