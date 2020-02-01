@@ -20,6 +20,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER
       // allowNull: false
     },
+    live: {
+      type: DataTypes.BOOLEAN
+      // allowNull: false
+    },
     description: {
       type: DataTypes.STRING
       // allowNull: false

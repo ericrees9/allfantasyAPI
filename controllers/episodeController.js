@@ -9,6 +9,7 @@ router.post("/create", (req, res) => {
   let date = req.body.episode.date;
   let recordingLocation = req.body.episode.recordingLocation;
   let length = req.body.episode.length;
+  let live = req.body.episode.live;
   let description = req.body.episode.description;
   let drafters = req.body.episode.drafters;
   let rpsWinner = req.body.episode.rpsWinner;
@@ -26,6 +27,7 @@ router.post("/create", (req, res) => {
     date: date,
     recordingLocation: recordingLocation,
     length: length,
+    live: live,
     description: description,
     drafters: drafters,
     rpsWinner: rpsWinner,
